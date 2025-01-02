@@ -1,0 +1,1 @@
+q1a -5: discard r-10 lowest; q2b -5: backslash is wrong operator to use here
