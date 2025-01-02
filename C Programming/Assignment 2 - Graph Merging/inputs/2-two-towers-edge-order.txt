@@ -1,0 +1,38 @@
+graph1: the battle of isengard
+
+uruk_hai -> ents, saruman
+ents -> merry, pippin, uruk_hai
+merry -> ents, gandalf, pippin
+gandalf -> eomer, king_theoden, saruman
+eomer -> gandalf
+king_theoden -> gandalf
+saruman -> gandalf, uruk_hai
+pippin -> ents, gandalf, merry
+
+graph2: the battle of helm's deep
+
+king_theoden -> aragorn, eomer, eowyn, gamling
+aragorn -> gimli, haldir, king_theoden, legolas
+gimli -> aragorn, king_theoden, legolas
+legolas -> aragorn, gimli, king_theoden
+haldir -> aragorn, legolas
+eomer -> eowyn, king_theoden
+eowyn -> eomer, king_theoden
+gamling -> king_theoden
+
+merged: the two towers
+
+uruk_hai -> ents, saruman
+ents -> merry, pippin, uruk_hai
+merry -> ents, gandalf, pippin
+gandalf -> eomer, king_theoden, saruman
+eomer -> eowyn, gandalf, king_theoden
+eowyn -> eomer, king_theoden
+king_theoden -> aragorn, eomer, eowyn, gamling, gandalf
+aragorn -> gimli, haldir, king_theoden, legolas
+gimli -> aragorn, king_theoden, legolas
+legolas -> aragorn, gimli, king_theoden
+haldir -> aragorn, legolas
+gamling -> king_theoden
+saruman -> gandalf, uruk_hai
+pippin -> ents, gandalf, merry

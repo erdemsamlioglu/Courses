@@ -1,0 +1,39 @@
+graph1: the rohirrim charge
+
+king_theoden -> aragorn, eomer, eowyn, orcs, riders_of_rohan
+aragorn -> gimli, king_theoden, legolas
+gimli -> aragorn, king_theoden, legolas
+legolas -> aragorn, gimli, king_theoden
+eomer -> king_theoden, king_theoden, merry, witch_king
+merry -> eowyn
+witch_king -> king_theoden, orcs
+orcs -> witch_king
+riders_of_rohan -> eomer, king_theoden
+
+graph2: the gondor defense
+
+knights_of_gondor -> gandalf
+gandalf -> knights_of_gondor, orcs, pippin
+orcs -> witch_king
+witch_king -> gandalf, knights_of_gondor, orcs
+pippin -> faramir, gandalf
+faramir -> denethor
+denethor -> faramir
+
+merged: the battle of minas trith
+
+king_theoden -> aragorn, eomer, eowyn, orcs, riders_of_rohan
+aragorn -> gimli, king_theoden, legolas, aragorn
+gimli -> king_theoden, legolas
+legolas -> aragorn, gimli, king_theoden
+eomer -> king_theoden
+eowyn -> king_theoden, merry, witch_king
+merry -> eowyn
+witch_king -> gandalf, king_theoden, knights_of_gondor, orcs
+gandalf -> knights_of_gondor, orcs, pippin
+knights_of_gondor -> gandalf
+orcs -> witch_king
+pippin -> faramir, gandalf
+faramir -> denethor
+denethor -> faramir
+riders_of_rohan -> eomer, king_theoden

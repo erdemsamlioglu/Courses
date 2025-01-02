@@ -1,0 +1,34 @@
+graph1: hobbits and gandalf
+
+frodo -> bilbo, gandalf, merry, sam, the_ring
+bilbo -> frodo, gandalf, smeagol, the_ring
+gandalf -> bilbo, frodo, the_ring
+smeagol -> the_ring
+merry -> frodo, sam
+sam -> frodo, merry
+
+
+graph2: the ring council
+
+elrond -> boromir, gandalf, gimli, legolas
+boromir -> aragorn
+aragorn -> elrond, frodo
+frodo -> aragorn
+gandalf -> elrond
+gimli -> aragorn
+legolas -> aragorn, elrond, gandalf
+
+
+merged: the fellowship of the ring
+
+frodo -> aragorn, bilbo, gandalf, merry, sam, the_ring
+aragorn -> elrond, frodo
+elrond -> boromir, gandalf, gimli, legolas
+boromir -> aragorn
+gandalf -> bilbo, elrond, frodo, the_ring
+bilbo -> frodo, gandalf, smeagol, the_ring
+smeagol -> the_ring
+gimli -> aragorn
+legolas -> aragorn, elrond, gandalf
+merry -> frodo, sam
+sam -> frodo, merry
