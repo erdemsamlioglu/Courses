@@ -1,0 +1,3 @@
+1.40 which one to use for which part
+
+1.24 for backpropagation
